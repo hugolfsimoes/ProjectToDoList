@@ -98,9 +98,9 @@ btnMoverBaixo.addEventListener('click', moverBaixo);
 
 function removerSelecionado() {
   const listaItens = document.querySelector('ol');
-  const selecionado = document.querySelectorAll('.selected');
+  const selecionado = document.querySelector('.selected');
 
-  listaItens.removeChild(selecionado[0]);
+  listaItens.removeChild(selecionado);
 }
 const btnRemoveSelecionado = document.querySelector('#remover-selecionado');
 btnRemoveSelecionado.addEventListener('click', removerSelecionado);
