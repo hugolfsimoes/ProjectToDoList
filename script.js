@@ -10,7 +10,7 @@ function criaItemLista() {
 const botaoAdicionar = document.querySelector('#criar-tarefa');
 botaoAdicionar.addEventListener('click', criaItemLista);
 
-function removeSelected(elemento) {
+function removeClassSelected(elemento) {
   const tagItem = elemento;
   for (let index = 0; index < elemento.length; index += 1) {
     tagItem[index].style.backgroundColor = 'white';
@@ -20,7 +20,7 @@ function removeSelected(elemento) {
 const lista = document.getElementById('lista-tarefas');
 lista.addEventListener('click', (event) => {
   const itens = document.querySelector('ol').children;
-  removeSelected(itens);
+  removeClassSelected(itens);
   const itemSelecionado = event.target;
   itemSelecionado.style.backgroundColor = 'rgb(128, 128, 128)';
   itemSelecionado.classList.add('selected');
@@ -61,9 +61,10 @@ salvarLista.innerHTML = localStorage.getItem('list');
 function salvarTarefa() {
   localStorage.setItem('list', salvarLista.innerHTML);
 }
-// Consegui a solução com a ajuda do PR da Thais Quintela Turma08 Trybe;
 const salvar = document.querySelector('#salvar-tarefas');
 salvar.addEventListener('click', salvarTarefa);
+
+// Consegui a solução com a ajuda do PR da Thais Quintela Turma08 Trybe;
 
 function moverCima() {
   let posicao;
@@ -76,7 +77,6 @@ function moverCima() {
   if (posicao > 0) {
     itens[posicao].parentElement.insertBefore(itens[posicao], itens[posicao - 1]);
   }
-  // Consegui a solução com a ajuda do PR da Thais Quintela Turma08 Trybe;
 }
 const btnMoverCima = document.querySelector('#mover-cima');
 btnMoverCima.addEventListener('click', moverCima);
