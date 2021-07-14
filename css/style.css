@@ -8,7 +8,7 @@ body {
   font-family: monospace;
 }
 
-header {
+main {
   text-align: center;
 }
 
@@ -179,4 +179,100 @@ ol {
 
 #salvar-tarefas:hover {
   opacity: 70%;
+}
+
+@media (max-width: 1300px) {
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-tudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 50px;
+    height: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .div-tarefa {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #texto-tarefa {
+    width: 80%;
+    font-size: 16px;
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  #criar-tarefa {
+    width: auto;
+    border-radius: 20px;
+    background-color: forestgreen;
+    font-size: 18px;
+    color: white;
+    border: 1px solid forestgreen;
+    padding: 0 10px;
+  }
+
+  .div-lista {
+    width: 90%;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .div-botoes {
+    margin: 0;
+    text-align: center;
+  }
+
+  .circle-button {
+    margin-bottom: 10px;
+  }
+
+  .oval-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oval-button button {
+    margin-bottom: 5px;
+  }
+
+  #remover-selecionado {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    margin-right: 15px;
+    font-weight: 900;
+  }
 }
