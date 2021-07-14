@@ -80,9 +80,12 @@ ol {
 }
 
 .div-botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: 50px 0 15px 200px;
   padding: 25px;
-  text-align: center;
 }
 
 #remover-selecionado {
@@ -247,6 +250,8 @@ ol {
   }
 
   .div-botoes {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     text-align: center;
   }
