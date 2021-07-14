@@ -17,7 +17,7 @@ header {
   text-align: left;
   background-color: white;
   margin-top: 200px;
-  width: 1400px;
+  width: 80%;
   border-radius: 50px;
   height: auto;
   padding-left: 40px;
@@ -47,7 +47,7 @@ p {
 }
 
 #texto-tarefa:focus {
-  box-shadow: 0 0 1em rgb(60 , 136 , 207);
+  box-shadow: 0 0 1em rgb(60, 136, 207);
 }
 
 #criar-tarefa {
@@ -137,10 +137,10 @@ ol {
   width: 170px;
   height: 30px;
   border-radius: 20px;
-  background-color: rgb(60 , 136 , 207);
+  background-color: rgb(60, 136, 207);
   font-size: 16px;
   color: white;
-  border: 1px solid rgb(60 , 136 , 207);
+  border: 1px solid rgb(60, 136, 207);
   font-weight: 900;
   margin-right: 15px;
 }
